@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+
+{% block body %}
+
+<br>
+<br>
+
+<div class="container">
+
+    <a href="/home" type="button" class="btn btn-primary btn-sm">Home</a>
+
+
+    <main role="main">
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Account Details</h1>
+                <br>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><big><b>Name : </b> {{ name.name }}</li></big>
+                    <li class="list-group-item"><big><b>Email Id : </b> {{ name.email }}</li></big>
+                    <li class="list-group-item"><big><b>Password : </b> {{ name.password }}</li></big>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+{% endblock %}
